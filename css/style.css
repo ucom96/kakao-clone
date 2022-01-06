@@ -1,65 +1,13 @@
 @import "reset.css";
-@import "status-bar.css";
 
+/*Components*/
+@import "component/status-bar.css";
+
+/*Screens*/
+@import "screens/login.css";
+
+/*style.css: 모든 스크린에 적용될 수 있는 스타일 작성*/
 .body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-}
-
-.welcome-header {
-  margin: 90px 0px;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.welcome-header__title {
-  margin-bottom: 20px;
-  font-size: 25px;
-}
-
-.welcome-header__text {
-  width: 60%;
-  opacity: 0.5;
-  font-size: 18px;
-}
-
-.login-form {
-  display: flex;
-  flex-direction: column;
-  margin: 0px 30px;
-}
-
-.login-form input {
-  border: none;
-  padding: 15px 0px;
-  font-size: 18px;
-  margin-bottom: 25px;
-}
-
-.login-form input::placeholder {
-  color: rgba(0, 0, 0, 0.4);
-}
-
-.login-form input:focus {
-  border-color: rgba(0, 0, 0, 0.4);
-}
-
-/*특정 속성에는 효과를 주고 싶지 않을경우*/
-.login-form input:not([type="submit"]) {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-}
-
-.login-form input[type="submit"] {
-  cursor: pointer;
-  padding: 20px 0px;
-  border-radius: 5px;
-}
-
-.login-form a {
-  text-align: center;
-  text-decoration: none;
-  color: inherit;
-  opacity: 0.8;
 }

@@ -132,3 +132,9 @@ table {
 input:focus {
   outline: none;
 }
+
+/*모든 link 검정색이며 밑줄이 없도록*/
+a {
+  color: #2f363e;
+  text-decoration: none;
+}

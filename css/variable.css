@@ -1,0 +1,4 @@
+/* 여러 페이지에 적용할 변수들 작성 */
+:root {
+  --horizontal-space: 25px;
+}

@@ -3,6 +3,7 @@
   display: block;
   background-color: #fafafa;
   padding: 15px 0px;
+  margin-bottom: 10px;
 }
 
 /*icon 색상 변경은 text 처럼 취급*/
@@ -13,4 +14,8 @@
 .fa-chevron-right {
   color: rgba(0, 0, 0, 0.3);
   margin-left: 10px;
+}
+
+.friends-screen {
+  padding: 0px var(--horizontal-space);
 }

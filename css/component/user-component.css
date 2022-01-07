@@ -39,3 +39,10 @@
 .user-component__column:last-child {
   color: rgba(0, 0, 0, 0.5);
 }
+
+.user-component__subtitle {
+  font-size: 12px;
+  font-weight: 400px;
+  color: rgba(0, 0, 0, 0.3);
+  margin-top: 8px;
+}

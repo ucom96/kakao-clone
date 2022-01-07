@@ -1,0 +1,16 @@
+.friends-display-link {
+  text-align: center;
+  display: block;
+  background-color: #fafafa;
+  padding: 15px 0px;
+}
+
+/*icon 색상 변경은 text 처럼 취급*/
+.fa-info-circle {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.fa-chevron-right {
+  color: rgba(0, 0, 0, 0.3);
+  margin-left: 10px;
+}

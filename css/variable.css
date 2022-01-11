@@ -1,4 +1,6 @@
 /* 여러 페이지에 적용할 변수들 작성 */
 :root {
   --horizontal-space: 25px;
+  --main-border: 1px solid rgba(0, 0, 0, 0.2);
+  --grey-color: rgba(0, 0, 0, 0.4);
 }

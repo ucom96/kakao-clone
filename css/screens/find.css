@@ -17,3 +17,22 @@
 .find-icons__icon span {
   margin-top: 20px;
 }
+
+.recommended-friends {
+  border-bottom: var(--main-border);
+  border-top: var(--main-border);
+  padding: 25px 0px;
+  margin: 25px 0px;
+}
+
+.recommended-friends__title {
+  font-size: 14px;
+  color: var(--grey-color);
+}
+
+.recommended-friends span {
+  display: block;
+  margin: 100px 0;
+  text-align: center;
+  color: var(--grey-color);
+}

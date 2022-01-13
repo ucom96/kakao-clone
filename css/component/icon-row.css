@@ -1,0 +1,23 @@
+/*find & more screen에 있는 icon row-icon*/
+.icon-row {
+  display: flex;
+  /*justify-content: space-between;*/
+  margin-top: 25px;
+  /*flex-wrap: 줄바꿈 여부*/
+  flex-wrap: wrap;
+}
+
+.icon-row__icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 25%;
+}
+
+.icon-row__icon i {
+  font-size: 35px;
+}
+
+.icon-row__icon span {
+  margin-top: 20px;
+}

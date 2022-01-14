@@ -1,0 +1,174 @@
+.chat-screen {
+  background-color: #abc1d0;
+  height: 1100vh;
+}
+
+.main-chat {
+  margin-top: 130px;
+}
+
+.chat-screen .status-bar {
+  top: 0;
+  position: fixed;
+  width: 100%;
+  box-sizing: border-box;
+  /*background-color와 z-index속성으로 채팅내용보다 위에 올라오는 요소가 되도록 설정*/
+  background-color: #abc1d0;
+  z-index: 2;
+}
+
+.chat-screen .alt-header {
+  background-color: #abc1d0;
+  z-index: 1;
+}
+
+.main-chat {
+  /*display:flex -> chat__timestamp의 width가 자동으로 조절됨*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.chat__timestamp {
+  color: white;
+  background-color: #92a4b2;
+  padding: 8px 15px;
+  border-radius: 15px;
+  font-size: 14px;
+  margin-bottom: 25px;
+}
+
+.message-row {
+  /*width:100%를 하면 message-row의 요소들이 왼쪽으로 이동*/
+  width: 100%;
+  display: flex;
+  margin-bottom: 25px;
+}
+
+.message-row img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.message__author {
+  opacity: 0.8;
+  font-size: 13px;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.message__info {
+  /*message__time을 밑으로 내리기 위함*/
+  display: flex;
+  align-items: flex-end;
+}
+
+.message__bubble {
+  background-color: white;
+  padding: 10px 12px;
+  border-radius: 15px;
+  border-top-left-radius: 0px;
+  margin-right: 5px;
+}
+
+.message__time {
+  font-size: 11px;
+  opacity: 0.8;
+}
+
+/*second row style*/
+
+.message-row--own .message__time {
+  margin-right: 5px;
+}
+
+.message-row--own .message__bubble {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 0px;
+  background-color: #fee503;
+}
+
+.message-row--own {
+  /*message-row는 이미 display:flex로 되어있음*/
+  justify-content: flex-end;
+}
+
+/*message__bubble과 message__time의 순서를 바꾸는 법 (1)*/
+/*order는 flex items들 사이에서 사용가능*/
+/*
+.message-row--own .message__bubble {
+  order: 1;
+}
+*/
+
+/*message__bubble과 message__time의 순서를 바꾸는 법 (2)*/
+.message-row--own .message__info {
+  flex-direction: row-reverse;
+}
+
+/*input & keyboard*/
+.reply {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  background-color: white;
+  box-sizing: border-box;
+  padding: 10px 25px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.reply__column:first-child {
+  width: 10%;
+}
+
+.reply__column:last-child {
+  width: 90%;
+  position: relative;
+}
+
+.reply input {
+  padding: 5px 10px;
+  height: 30px;
+  width: 100%;
+  border: var(--main-border);
+  border-radius: 20px;
+}
+
+/* >를 하지 않으몀 button 안에 있는 i까지 선택됨*/
+.reply__column:last-child > i,
+.reply__column:last-child button {
+  position: absolute;
+  right: -15px;
+  top: 6px;
+}
+
+.reply__column:last-child > i {
+  right: 30px;
+  top: 14px;
+}
+
+.reply__column button {
+  background-color: #fee503;
+  border: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+/*button 클릭시 아무일도 일어나지 않게 함*/
+.reply__column button:focus,
+.reply__column button:active {
+  outline: none;
+}
+
+.reply i {
+  opacity: 0.5;
+}
+
+.reply__column button i {
+  opacity: 1;
+}

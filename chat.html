@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="css/style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat w/ YunaJo - Kokoa Talk</title>
+  </head>
+  <body class="chat-screen">
+    <!--status bar-->
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span>No Service</span>
+        <i class="fas fa-wifi"></i>
+      </div>
+      <div class="status-bar__column">
+        <span>18:43</span>
+      </div>
+      <div class="status-bar__column">
+        <i class="fas fa-unlock"></i>
+        <span>110%</span>
+        <i class="fas fa-battery-full"></i>
+        <i class="fas fa-bolt"></i>
+      </div>
+    </div>
+
+    <!--alt-screen-header-->
+    <header class="alt-header">
+      <div class="alt-header__column">
+        <a href="chats.html"><i class="fas fa-angle-left fa-3x"></i></a>
+      </div>
+      <div class="alt-header__column">
+        <h1 class="alt-header__title">YunaJo</h1>
+      </div>
+      <div class="alt-header__column">
+        <span><i class="fas fa-search fa-2x"></i></span>
+        <span><i class="fas fa-bars fa-2x"></i></span>
+      </div>
+    </header>
+
+    <!--main chatting area-->
+    <main class="main-screen main-chat">
+      <!--chatting time-->
+      <div class="chat__timestamp">Friday, January 14, 2022</div>
+      <!--chatting content-->
+      <!--1st message row-->
+      <div class="message-row">
+        <img
+          src="file:///Users/yunajo/Desktop/kokoa-clone-nomadcoder/img/avatar.jpeg"
+        />
+        <div class="message-row__content">
+          <span class="message__author">YunaJo</span>
+          <div class="message__info">
+            <span class="message__bubble">Hi!</span>
+            <span class="message__time">20:31</span>
+          </div>
+        </div>
+      </div>
+      <!--2nd message row-->
+      <!--modifier 사용-->
+      <div class="message-row message-row--own">
+        <div class="message-row__content">
+          <div class="message__info">
+            <span class="message__bubble">What's up!</span>
+            <span class="message__time">20:32</span>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!--input & keyboard-->
+    <form class="reply">
+      <div class="reply__column">
+        <i class="far fa-plus-square fa-lg"></i>
+      </div>
+      <div class="reply__column">
+        <input type="text" placeholder="please write a text.." />
+        <i class="far fa-smile-beam fa-lg"></i>
+        <button><i class="far fa-arrow-alt-circle-up"></i></button>
+      </div>
+    </form>
+
+    <!--font-->
+    <script
+      src="https://kit.fontawesome.com/6478f529f2.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

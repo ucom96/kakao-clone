@@ -1,0 +1,40 @@
+.alt-header {
+  padding: 50px var(--horizontal-space) 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  /*position:fixed를 할 시 모든 요소들이 왼쪽으로 쏠리므로 width:100%를 해줘야함*/
+  width: 100%;
+  box-sizing: border-box;
+  top: 0;
+}
+
+.alt-header__column {
+  width: 33%;
+}
+
+.alt-header__column h1 {
+  font-weight: 600;
+  font-size: 30px;
+}
+
+/*setting이 정중앙에 오도록*/
+.alt-header__column:first-child {
+  margin-right: auto;
+}
+
+.alt-header__column:last-child {
+  margin-left: auto;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.alt-header__column span:last-child {
+  margin-left: 20px;
+}
+
+.alt-header__column:nth-child(2) {
+  /*YunaJo를 가운데로 오도록 함*/
+  text-align: center;
+}
